@@ -2,13 +2,14 @@
 
 namespace workshop2__1 {
     class Program {
-        static void Main(string[] args) { double height = 10.0;
-          double pedestal = 15.0;
+        static void Main(string[] args) {
+            const double PI = 3.1415926535; 
+          double radius = 5.0; 
 
-          double area = 1.0/2.0 * pedestal * height;
-          double length = pedestal + pedestal + pedestal;
+          double area = PI * radius * radius;
+          double length = 2 * PI * radius;
 
-          Console.WriteLine("Area is: {0} , length is: {1}", area , length);
+          Console.WriteLine("Ares is: {0}, Length: {1}", area, length);
 
         }
     }
