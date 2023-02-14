@@ -3,10 +3,14 @@
 namespace workshop2__1 {
     class Program {
         static void Main(string[] args) {
-             string name = "assawin sangmarn";
-          int age = 18;
+            int capital = 20000; 
+          int year = 3;
+          float rate = 6.25f;
 
-          Console.WriteLine("I am {0}. I am {1} years old", name, age);
+          float result = capital * year * rate / 100.0f;
+
+          Console.WriteLine("result is {0}", result);
+
         }
     }
 }
