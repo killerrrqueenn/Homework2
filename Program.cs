@@ -2,14 +2,13 @@
 
 namespace workshop2__1 {
     class Program {
-        static void Main(string[] args) {
-            int capital = 20000;  // setup capital
-          int year = 3;
-          float rate = 6.25f;
+        static void Main(string[] args) { double height = 10.0;
+          double pedestal = 15.0;
 
-          float result = capital * year * rate / 100.0f;
+          double area = 1.0/2.0 * pedestal * height;
+          double length = pedestal + pedestal + pedestal;
 
-          Console.WriteLine("result is {0}", result);
+          Console.WriteLine("Area is: {0} , length is: {1}", area , length);
 
         }
     }
