@@ -10,7 +10,7 @@ namespace workshop2__1 {
           float result = capital * year * rate / 100.0f;
 
           Console.WriteLine("result is {0}", result);
-
+    
         }
     }
 }
