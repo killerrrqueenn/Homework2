@@ -3,11 +3,16 @@
 namespace workshop2__1 {
     class Program {
         static void Main(string[] args) {
-            bool result1 = !(7 >= 2)&& (4 == 2) || (4 < 2);
-        bool result2 = (3 > 3) || ((5 > 2) && (4 < 1));
+            Console.Write("Input name: ");
+       string name = Console.ReadLine();
 
-        Console.WriteLine("Result 1 is: {0}", result1);
-        Console.WriteLine("Result 2 is: {0}", result2);
+       Console.Write("Input surname: ");
+       string surname = Console.ReadLine();
+
+       Console.Write("Input Nickname: ");
+       string nickName = Console.ReadLine();
+
+       Console.WriteLine("Hello my name is {0} {1}. Call me {2}", name, surname, nickName);
 
         }
     }
