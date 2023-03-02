@@ -1,19 +1,40 @@
 ﻿using System;
+class Program {
+    static void Main(string[] args) {
+         Console.Write("Input Your Name : ");
+        string name = Console.ReadLine();
+        Console.Write("Fill The Password : ");
+        string passwordStr = Console.ReadLine();
+        int[] Password = Array.ConvertAll(passwordStr.ToCharArray(), c => (int)Char.GetNumericValue(c));
+        Console.Write("Belong To  : ");
+        string group = Console.ReadLine().ToUpper();
 
-namespace workshop2__1 {
-    class Program {
-        static void Main(string[] args) {
-            Console.Write("Input name: ");
-       string name = Console.ReadLine();
+        bool TrueorFalse = false;
 
-       Console.Write("Input surname: ");
-       string surname = Console.ReadLine();
+        if (Password[5] % 3 == 0 && Password[4] != 1 && Password[4] != 3 && Password[4] != 5 && Password[2] >= 6 && Password[2] != 8 && group == "CIA") {
+            TrueorFalse = true;
 
-       Console.Write("Input Nickname: ");
-       string nickName = Console.ReadLine();
+            if (TrueorFalse == true) {
+                Console.Write(TrueorFalse);
+            }                              
+        }
 
-       Console.WriteLine("Hello my name is {0} {1}. Call me {2}", name, surname, nickName);
+        if (Password[0] >= 4 && Password[0] <= 7 && Password[3] % 2 == 0 && Password[3] != 6 && Password[1] % 2 != 0 && group == "FBI") {
+            TrueorFalse = true;
 
+            if (TrueorFalse == true) {
+                Console.Write(TrueorFalse);
+            }           
+        }
+        if (Password[5] >= 1 && Password[5] <= 6 && Password[5] != 4 && Password[3] % 3 == 0 && Password[3] % 2 != 0 && Password.Contains(7) && group == "NSA") {
+            TrueorFalse = true;
+
+            if (TrueorFalse == true) {
+                Console.Write(TrueorFalse);
+            }            
+        }
+        if (TrueorFalse == false) {
+            Console.Write("false");
         }
     }
 }
